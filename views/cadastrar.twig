@@ -1,0 +1,15 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+  <h1>Cadastrar cliente</h1>
+  <form action="/cadastrarCliente" method="post">
+    Nome: <input type="text" name="nome" id=""> <br> <br>
+    Endereço: <input type="text" name="endereco" id=""> <br> <br>
+    Bairro: <input type="text" name="bairro" id=""> <br> <br>
+    CEP: <input type="text" name="CEP" id=""> <br> <br>
+    Cidade: <input type="text" name="cidade" id=""> <br> <br>
+    Estado: <input type="text" name="estado" id=""> <br> <br>
+    Observacao: <input type="text" name="observacao" id=""> <br> <br>
+    <input type="submit" value="Enviar">
+  </form>
+{% endblock %}
