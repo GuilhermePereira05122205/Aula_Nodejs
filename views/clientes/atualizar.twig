@@ -1,0 +1,18 @@
+{% extends 'clientes/layout.twig' %}
+
+{% block body %}
+  <h1>Atualizar cliente</h1>
+  
+  <form action="/atualizar" method="post">
+  <input type="text" name="id" id="" value="{{cliente.id}}" hidden>
+    Nome: <input type="text" name="nome" id="" value="{{ cliente.nome }}"> <br> <br>
+    Endereço: <input type="text" name="endereco" id="" value="{{ cliente.endereco }}"> <br> <br>
+    Bairro: <input type="text" name="bairro" id="" value="{{ cliente.bairro }}"> <br> <br>
+    CEP: <input type="text" name="CEP" id="" value="{{ cliente.cep }}"> <br> <br>
+    Cidade: <input type="text" name="cidade" id="" value="{{ cliente.cidade }}"> <br> <br>
+    Estado: <input type="text" name="estado" id="" value="{{ cliente.estado }}"> <br> <br>
+    Observacao: <input type="text" name="observacao" id="" value="{{ cliente.observacao }}"> <br> <br>
+    <input type="submit" value="Enviar">
+  </form>
+ 
+{% endblock %}

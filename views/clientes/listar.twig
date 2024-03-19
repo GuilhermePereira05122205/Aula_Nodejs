@@ -1,0 +1,43 @@
+{% extends 'clientes/layout.twig' %}
+
+{% block body %}
+
+    <table>
+        <thead>
+        <tr>
+            <td>Id</td>
+            <td>Nome</td>
+            <td>Endereco</td>
+            <td>Bairro</td>
+            <td>CEP</td>
+            <td>Cidade</td>
+            <td>Estado</td>
+            <td>Obeservacao</td>
+        </tr>
+        </thead>
+        <tbody>
+         {% for cliente in Clientes %}
+            <tr>
+                <td>{{cliente.id}}</td>
+                <td>{{cliente.nome}}</td>
+                <td>{{cliente.endereco}}</td>
+                <td>{{cliente.bairro}}</td>
+                <td>{{cliente.cep}}</td>
+                <td>{{cliente.cidade}}</td>
+                <td>{{cliente.estado}}</td>
+                <td>{{cliente.observacao}}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <style>
+        table{
+            border: 2px solid black;
+        }
+        td{
+            border: 2px solid black;
+        }
+    </style>
+
+{% endblock %}
