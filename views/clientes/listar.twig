@@ -1,0 +1,53 @@
+{% extends 'clientes/layout.twig' %}
+
+{% block body %}
+
+
+	<div class="ui one column grid">
+		<div class="column">
+			<table class="ui celled table">
+				<thead>
+					<tr>
+						<td>Id</td>
+						<td>Nome</td>
+						<td>Endereco</td>
+						<td>Bairro</td>
+						<td>CEP</td>
+						<td>Cidade</td>
+						<td>Estado</td>
+						<td>Obeservacao</td>
+						<td>Funções</td>
+					</tr>
+				</thead>
+				<tbody>
+					{% for cliente in Clientes %}
+						<tr>
+							<td>{{cliente.id}}</td>
+							<td>{{cliente.nome}}</td>
+							<td>{{cliente.endereco}}</td>
+							<td>{{cliente.bairro}}</td>
+							<td>{{cliente.cep}}</td>
+							<td>{{cliente.cidade}}</td>
+							<td>{{cliente.estado}}</td>
+							<td>{{cliente.observacao}}</td>
+							<td>
+								<a href="atualizar/{{cliente.id}}">
+									<button class="ui primary inverted button">
+										Atualizar
+									</button>
+								</a>
+								<a href="excluir/{{cliente.id}}" style="color: red !important;">
+									<button class="ui red inverted button">
+										excluir
+									</button>
+								</a>
+							</td>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+
+{% endblock %}

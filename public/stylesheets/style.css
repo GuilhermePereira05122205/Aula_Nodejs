@@ -1,0 +1,47 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.table{
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.grid{
+  max-width: 80% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.menu{
+  background-color: aliceblue !important;
+  margin-bottom: 30px !important; 
+}
+body{
+  background-color: cadetblue !important;
+}
+.item{
+  color: black !important;
+}
+
+h1{
+  color: white !important;
+}
+
+h3{
+  color: white !important;
+}
+
+label{
+  color: azure  !important;
+}
+
+.envio{
+  background-color: cornflowerblue !important;
+  color: white !important;
+}

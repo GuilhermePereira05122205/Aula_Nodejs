@@ -1,0 +1,44 @@
+{% extends 'clientes/layout.twig' %}
+
+{% block body %}
+	
+
+
+	<div class="ui one column grid">
+  <h1 class="ui header">Cadastrar cliente</h1>
+		<div class="column">
+			<form class="ui form" action="/cadastrar" method="post">
+				<div class="field">
+					<label>Nome</label>
+					<input type="text" name="nome" placeholder="Nome">
+				</div>
+				<div class="field">
+					<label>Endereco</label>
+					<input type="text" name="endereco" placeholder="endereco">
+				</div>
+				<div class="field">
+					<label>Bairro</label>
+					<input type="text" name="bairro" placeholder="Bairro">
+				</div>
+				<div class="field">
+					<label>CEP</label>
+					<input type="text" name="cep" placeholder="CEP">
+				</div>
+				<div class="field">
+					<label>Cidade</label>
+					<input type="text" name="cidade" placeholder="Cidade">
+				</div>
+				<div class="field">
+					<label>Estado</label>
+					<input type="text" name="estado" placeholder="Estado">
+				</div>
+				<div class="field">
+					<label>Observacao</label>
+					<input type="text" name="observacao" placeholder="observacao">
+				</div>
+				<button class="ui button envio" type="submit">Enviar</button>
+			</form>
+		</div>
+	</div>
+
+{% endblock %}

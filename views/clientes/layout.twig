@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ title }}</title>
+		<link rel='stylesheet' href='/stylesheets/style.css'/>
+		<link rel='stylesheet' href='/semantic/semantic.css'/>
+	</head>
+	<body>
+		<div class="ui secondary  menu">
+      <h3 class="item" disabled>
+        Cadastro de clientes
+      </h3>
+			<a class="item" href="/listar">
+				Listar
+			</a>
+			<a class="item" href="/cadastrar">
+				Cadastrar
+			</a>
+		</div>
+		{% block body %}{% endblock %}
+	</body>
+</html>
